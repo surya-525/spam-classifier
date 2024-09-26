@@ -1,31 +1,18 @@
-# Spam-Ham-Classifier 
-## A Machine learning classifier to predict whether the SMS is Spam or Ham by using Natural Language Processing (NLP)
+# Spam-Classifier 
+## A Machine learning classifier to predict whether the SMS is Spam by using Natural Language Processing (NLP)
 
-<h1 align="center">
-  <br>
-  <a href="url"><img src="https://github.com/Pratik180198/Spam-Ham/blob/master/Screenshots/logo1.png" alt="SpamClassifier"></a>
-  <br>
-  SpamClassifier
-  <br>
-</h1>
 <h4 align="center">In this project I build a model for classifying the SMS/Email into spam or ham through the text of the SMS/Email using standard classifiers.</h4>
 
 
 ## Table of Content
 
   * [Dataset](#dataset)
-  * [Demo](#demo)
-  * [Screenshots](#screenshots)
   * [Methodology](#methodology)
-  * [Bug / Feature Request](#bug--feature-request)
   * [Technologies Used](#technologies-used)
-  * [Team](#team)
-  * [Contact](#contact) 
   
 ## Dataset
 The SMS/Email Spam Collection is a set of SMS tagged messages that have been collected for SMS/Email Spam research. It contains one set of SMS messages in English of 5,567 messages, tagged according being ham (legitimate) or spam.
 
-> You can collect raw dataset from [here](https://github.com/Pratik180198/Spam-Ham/blob/master/spam.csv).
 
 The files contain one message per line. Each line is composed by two columns:
 - `Class`- contains the label (ham or spam) 
@@ -33,20 +20,6 @@ The files contain one message per line. Each line is composed by two columns:
 
 Dataset link : https://www.kaggle.com/uciml/sms-spam-collection-dataset
 
-## Demo
-Link: [https://spam-ham-nlp-model.herokuapp.com/](https://spam-ham-nlp-model.herokuapp.com/)
-
-## Screenshots
-
-#### CHECKING PART 1 
-
-<a href="url"><img src="https://github.com/Pratik180198/Spam-Ham/blob/master/Screenshots/Screenshot%20(69).png"></a>
-<a href="url"><img src="https://github.com/Pratik180198/Spam-Ham/blob/master/Screenshots/Screenshot%20(70).png"></a>
-
-#### CHECKING PART 2
-
-<a href="url"><img src="https://github.com/Pratik180198/Spam-Ham/blob/master/Screenshots/Screenshot%20(72).png"></a>
-<a href="url"><img src="https://github.com/Pratik180198/Spam-Ham/blob/master/Screenshots/Screenshot%20(71).png"></a>
 
 ## Methodology
 
@@ -114,10 +87,6 @@ It computes “relative frequency” that a word appears in a document compared 
 
 TF-IDF is applied on the body_text, so the relative count of each word in the sentences is stored in the document matrix. (Check the repo). Note: Vectorizers outputs sparse matrices. Sparse Matrix is a matrix in which most entries are 0. In the interest of efficient storage, a sparse matrix will be stored by only storing the locations of the non-zero elements.
 
-<p align="center">
-  <br>
-  <img src="https://github.com/Pratik180198/Spam-Ham/blob/master/Screenshots/modelLearning.png">
-</p>
 
 
 ### 9. Making Model and Evaluation Metrics
@@ -135,33 +104,8 @@ Once the app is successfully build you can visit your web app.
 
 Our next step would be to follow the instruction given on [Heroku Documentation](https://devcenter.heroku.com/articles/getting-started-with-python) to deploy a web app.
 
-To run the app, create a procfile and shoot this command in the project directory:
-```bash
-web: gunicorn app:app
-```
-
-
-## Bug / Feature Request
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/Pratik180198/Spam-Ham/issues/new) by including your search query and the expected result.
-
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/Pratik180198/Spam-Ham/issues/new). Please include sample queries and their corresponding results.
 
 ## Technologies Used
 
 <img alt="Python" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white"/><img alt="Flask" src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white"/><img alt="PyCharm" src="https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green"/><img alt="GitHub" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"/><img alt="Heroku" src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"/><img alt="Pandas" src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" /><img alt="NumPy" src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" /><img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-%23F37626.svg?style=for-the-badge&logo=Jupyter&logoColor=white" /><img alt="Scikit-Learn" src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" />
 
-## Team
-
-[<img target="_blank" src="https://avatars.githubusercontent.com/u/72552513?v=4" width=170>](https://github.com/Pratik180198) |
--|
-[Pratik Bambulkar](https://github.com/Pratik180198) |)
-
-
-## Contact
-
-You can reach me : 
-
-[<img alt="Instagram" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>](https://www.instagram.com/pratikkk______/)
-[<img alt="Gmail" src= "https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>](https://mail.google.com/mail/?view=cm&fs=1&to=pratikbambulkar1818@gmail.com&su=Bank_Note_Authentication&body=BODY)
-[<img alt="Facebook" src= "https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white"/>](http://www.facebook.com/100004659334096/)
-[<img alt="Linkedin" src= "https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>](https://www.linkedin.com/in/pratik-bambulkar-06241116a/)
